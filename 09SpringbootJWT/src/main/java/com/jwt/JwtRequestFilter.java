@@ -33,7 +33,7 @@ public class JwtRequestFilter extends OncePerRequestFilter {
 	
 		// authorization should be given in key in postman
 		// we can also give anything that we want in getHeader, what we re giving in getHeader that should be written as key in postman
-		final String requestTokenHeader = request.getHeader("Authorization");
+		final String requestTokenHeader = request.getHeader("authorization");
 		System.out.println(requestTokenHeader);
 
 		String username = null;

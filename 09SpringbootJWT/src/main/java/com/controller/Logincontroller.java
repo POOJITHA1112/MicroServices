@@ -1,6 +1,7 @@
 package com.controller;
 
 import org.springframework.security.authentication.AuthenticationManager;
+
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.bean.LoginReqBean;
 import com.bean.LoginResponseBean;
 import com.jwt.JwtTokenUtil;
-import com.service.UserDetailsServiceImpl;
+import com.jwt.UserDetailsServiceImpl;
 
 @RestController
 public class Logincontroller {
@@ -37,10 +38,6 @@ public class Logincontroller {
 		return ResponseEntity.ok(loginResponseBean);
 	}
 	
-//	private void authenticate(String username,String password) {
-//	authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(username, password));
-//		
-//	}
 	}
 
 

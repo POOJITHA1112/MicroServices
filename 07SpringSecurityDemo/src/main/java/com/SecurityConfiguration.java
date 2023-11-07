@@ -17,6 +17,8 @@ import org.springframework.security.web.SecurityFilterChain;
 @Configuration
 public class SecurityConfiguration {
 	
+//	 IN MEMORY AUTHENTICATION
+	
 //	@Bean
 	//{noop} this is for no encrypted password
 //	if we are not providing password encrypter and not using {noop} then login page redirects to the same page
